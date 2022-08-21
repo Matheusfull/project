@@ -8,7 +8,7 @@
     <title>Spartacus</title>
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,23 +16,21 @@
 
     <!-- Lugar onde será a navegação, contendo logo, links e direcionamentos de páginas. -->
 
-    <nav>
-        <img src="img/arquivos_logo/logo_alunos-azul.jpg" alt="logo azul Spartacus">
-        <div class="navigation">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Essência da marca</a></li>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#base">Missão, visão e verbos</a></li>
-                <li><a href="#contact">Fale conosco</a></li>
-            </ul>
-        </div>
-    </nav>
-
     <!-- Lugar odne vamos desenvolver todo o home -->
 
     <section id="home">
-        
+        <nav>
+            <img src="img/arquivos_logo/logo_alunos-fundo-branco-editada.png" alt="logo azul Spartacus">
+            <div class="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Essência da marca</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#base">Missão, visão e verbos</a></li>
+                    <li><a href="#contact">Fale conosco</a></li>
+                </ul>
+            </div>
+        </nav>
         
         <h2>Titulo que quisermos</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia cum sequi quidem libero ratione consectetur
@@ -118,11 +116,11 @@
 
     <!--Formulário-->
 
-    <section id="form_map">
+    <!-- <section id="form_map">
         <form id="dados">
-            <h2 id="formulario">Formulário para Contato</h2>
+            <h2 id="formulario">Fale conosco</h2>
             <div class=".body">
-                <!--Nome e sobrenome-->
+                
                 <fieldset class="grupo">
                     <div class="campo">
                         <label for="grupo"><strong>Nome</strong></label>
@@ -134,13 +132,13 @@
     
                     </div>
                 </fieldset>
-                <!--email-->
+                
     
                 <div class="campo">
                     <label for="email"><strong>Email</strong></label>
                     <input type="email" name="email" id="email" required>
                 </div>
-                <!--Telefone-->
+                
                 <div class="campo">
                     <label for="telefone"><strong>Telefone</strong></label>
                     <input type="tel" name="telefone" id="telefone" required>
@@ -181,20 +179,64 @@
             <h2>Nossa localização :</h2> <br>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.202050566963!2d-43.345919285232554!3d-22.832013040946777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x996358b240e555%3A0x3e5c7d69f4b662b7!2sEstacionamento%20-%20Av.%20Pastor%20Martin%20Luther%20King%20J%C3%BAnior%2C%20126%20-%20Del%20Castilho%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020760-005!5e0!3m2!1spt-BR!2sbr!4v1658530181760!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </section>
+    </section> -->
+
+    <!--ALTERAÇÃO DE DHENER-->
+    <div class="container">
+        <div style="text-align: center;">
+            <h2>Fale Conosco</h2>
+            <p>Cadastre-se e entraremos em contato com você em breve:</p>
+        </div>
+        <div class="linha">
+            <div class="coluna">
+                <iframe style="display: inline-block; width: 100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.202050566963!2d-43.345919285232554!3d-22.832013040946777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x996358b240e555%3A0x3e5c7d69f4b662b7!2sEstacionamento%20-%20Av.%20Pastor%20Martin%20Luther%20King%20J%C3%BAnior%2C%20126%20-%20Del%20Castilho%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020760-005!5e0!3m2!1spt-BR!2sbr!4v1658530181760!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="coluna">
+                <form action="">
+                    <label for=""><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required placeholder="Nome..">
+                    <label for=""><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required placeholder="Sobrenome..">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" required placeholder="Email..">
+                    <label for="telefone"><strong>Telefone</strong></label>
+                    <input type="tel" name="telefone" id="telefone" required placeholder="Telefone..">
+                    <label for="spartacus"><strong>Como Conheceu a Spartacus ?</strong></label>
+                    <select id="spartacus" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option>Indicação</option>
+                        <option>Instagram</option>
+                        <option>Facebook</option>
+                        <option>Google</option>
+                        <option>Cliente Reincidente</option>
+                    </select>
+                    <label for="vertical de interesse"><strong>Interesse de Contratação</strong></label><br>
+                    <select name="contratacao" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option>Consultoria Empresarial</option>
+                        <option>Assessoria Política</option>
+                        <option>Cursos Preparatórios</option>
+                    </select>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--termina aqui-->
     
-    <section id="contact">
+    <!-- <section id="contact">
         <h3>Nossas Redes!</h3>
         <a><link rel="stylesheet" href=""><img src="img/instagram-brands.svg" alt=""></a>
         <a><link rel="stylesheet" href=""><img src="img/whatsapp-brands.svg" alt=""></a>
         <a><link rel="stylesheet" href=""><img src="img/facebook-brands.svg" alt=""></a>
-    </section>
+    </section> -->
 
-  
-
+    <!--Produzido por dhener-->
+    <footer class="w3-container w3-teal w3-center w3-margin-top" id="contact">
+        <p>Encontre-me nas redes sociais.</p>
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-whatsapp w3-hover-opacity"></i>
+    </footer>
 </body>
-
-
-
-
 </html>
