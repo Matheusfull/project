@@ -1,37 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spartacus</title>
-
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 </head>
 
 <body>
-
     <!-- Lugar onde será a navegação, contendo logo, links e direcionamentos de páginas. -->
 
     <!-- Lugar odne vamos desenvolver todo o home -->
-
     <section id="home">
-        <nav>
+        <nav class="header">
             <img src="img/arquivos_logo/logo_alunos-fundo-branco-editada.png" alt="logo azul Spartacus">
-            <div class="navigation">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#features">Essência da marca</a></li>
-                    <li><a href="#">Cursos</a></li>
-                    <li><a href="#base">Missão, visão e verbos</a></li>
-                    <li><a href="#contact">Fale conosco</a></li>
-                </ul>
-            </div>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Essência da marca</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#base">Missão, visão e verbos</a></li>
+                <li><a href="#contact">Fale conosco</a></li>
+                <li><a href="#formulario ">Cadastre-se</a></li>
+            </ul>
         </nav>
-        
         <h2>Titulo que quisermos</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia cum sequi quidem libero ratione consectetur
             autem facilis. Nesciunt voluptas assumenda sed neque fuga veniam eos iusto perferendis alias sint. Fuga.</p>
@@ -42,44 +38,38 @@
     </section>
 
     <!-- Parte que desenvolveremos as opções -->
-
     <section id="features">
-
         <h1>Essência da marca</h1>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+         <p>Recursos chaves do nosso projeto.</p>
         <div class="fea-base">
             <div class="fea-box">
-                <img src="img/graduation-cap-solid.svg" alt="" width="30px">
-                <h3>Educação</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla id consequatur dolorum pariatur nemo,
-                    aut quam porro, veniam corrupti, facere dicta dolores!</p>
+                <i class='fas fa-graduation-cap'></i>
+                <h3>Spartacus Educação</h3>
+                <p> Unidade de Negócio focada no oferecimento de cursos e treinamentos complementares a educação básica. 
+                    Tendo como direcionamento o suporte aos Jovens e Adultos em sua qualificação profissional, alinhando 
+                    aptidões naturais e conexões fortalecidas.</p>
             </div>
             <div class="fea-box">
-                <img src="img/graduation-cap-solid.svg" alt="" width="30px">
-                <h3>Acompanhamento</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla id consequatur dolorum pariatur nemo,
-                    aut quam porro, veniam corrupti, facere dicta dolores!</p>
+                <i class='fas fa-chart-bar'></i>
+                <h3>Spartacus Consultoria Empresarial</h3>
+                <p>Unidade de Negócio focada no aconselhamento técnico de pessoas físicas e jurídicas nas questões referentes a 
+                    gestão de seus negócios. Tendo como foco de atuação o suporte as áreas de Backoffice do negócio, dando maior 
+                    possibilidade aos empreendedores de atuarem com o que realmente seja o objetivo do empreendimento.</p>
             </div>
             <div class="fea-box">
-                <img src="img/graduation-cap-solid.svg" alt="" width="30px">
-                <h3>Cursos</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla id consequatur dolorum pariatur nemo,
-                    aut quam porro, veniam corrupti, facere dicta doloresa!</p>
+                <i class='fas fa-users'></i>
+                <h3>Spartacus Assessoria Política</h3>
+                <p>Unidade de Negócio focada na instrução, formação e gerenciamento de campanhas políticas. Tendo como principal
+                     objetivo o direcionamento estratégico e o engajamento de lideranças locais no processo políticio nacional.</p>
             </div>
-
-
         </div>
-
         <!--Precisamos dar um estilo melhor nessa section!-->
-
     </section>
 
-    
     <section id="base">
         <div class="imagem">
-            <img src="img/meninoestudando.png" alt="um menino escrevendo">
+            <img src="img/menino_escrevendo.jpeg" alt="um menino escrevendo">
         </div>
-             
         <div class="text_missao">
             <h3>Missão</h3>
             <p> Somos um meio de impacto e desenvolvimento local. Orientamos e preparamos para construirrem
@@ -107,136 +97,84 @@
                 Fomentamos sonhos. Nascemos de narrativas
                 inspiradoras e crescemos junto à elas. Acolhemos as
                 pequenas vitórias e as tornamos grandes conquistas.
-                Queremos transformar oportunidades em histórias reais.</p>
-          </div>
-            </div>
-
-
+                Queremos transformar oportunidades em histórias reais.
+            </p>
+        </div>
     </section>
 
-    <!--Formulário-->
-
-    <!-- <section id="form_map">
-        <form id="dados">
-            <h2 id="formulario">Fale conosco</h2>
-            <div class=".body">
-                
-                <fieldset class="grupo">
-                    <div class="campo">
-                        <label for="grupo"><strong>Nome</strong></label>
-                        <input type="text" name="nome" id="nome" required>
-                    </div>
-                    <div class="campo">
-                        <label for="sobrenome"><strong>Sobrenome</strong></label>
-                        <input type="text" name="sobrenome" id="sobrenome" required>
-    
-                    </div>
-                </fieldset>
-                
-    
-                <div class="campo">
-                    <label for="email"><strong>Email</strong></label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-                
-                <div class="campo">
-                    <label for="telefone"><strong>Telefone</strong></label>
-                    <input type="tel" name="telefone" id="telefone" required>
-                </div>    
-            
-    
-    
-                <div class="campo">
-                    <label for="spartacus"><strong>Como Conheceu a Spartacus ?</strong></label>
-                    <select id="spartacus" required>
-                        <option selected disabled value="">Selecione</option>
-                        <option>Indicação</option>
-                        <option>Instagram</option>
-                        <option>Facebook</option>
-                        <option>Google</option>
-                        <option>Cliente Reincidente</option>
-                    </select>
-                </div>
-    
-    
-                <div class="campo">
-                    <label for="vertical de interesse"><strong>Interesse de Contratação</strong></label><br>
-                    <select name="contratacao" required>
-                        <option selected disabled value="">Selecione</option>
-                        <option>Consultoria Empresarial</option>
-                        <option>Assessoria Política</option>
-                        <option>Cursos Preparatórios</option>
-                    </select>
-    
-                </div>
-    
-            </div>
-            </div>
-            <div><button type="submit" id="enviar" onclick="check_form(); return false;">ENVIAR</button></div>
-        </form>
-
-        <div id="map" >
-            <h2>Nossa localização :</h2> <br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.202050566963!2d-43.345919285232554!3d-22.832013040946777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x996358b240e555%3A0x3e5c7d69f4b662b7!2sEstacionamento%20-%20Av.%20Pastor%20Martin%20Luther%20King%20J%C3%BAnior%2C%20126%20-%20Del%20Castilho%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020760-005!5e0!3m2!1spt-BR!2sbr!4v1658530181760!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section> -->
-
-    <!--ALTERAÇÃO DE DHENER-->
-    <div class="container">
+    <!--FORMULÁRIO-->
+    <div class="container" id="formulario">
         <div style="text-align: center;">
             <h2>Fale Conosco</h2>
             <p>Cadastre-se e entraremos em contato com você em breve:</p>
         </div>
         <div class="linha">
             <div class="coluna">
-                <iframe style="display: inline-block; width: 100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.202050566963!2d-43.345919285232554!3d-22.832013040946777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x996358b240e555%3A0x3e5c7d69f4b662b7!2sEstacionamento%20-%20Av.%20Pastor%20Martin%20Luther%20King%20J%C3%BAnior%2C%20126%20-%20Del%20Castilho%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020760-005!5e0!3m2!1spt-BR!2sbr!4v1658530181760!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe style="display: inline-block; width: 100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.202050566963!2d-43.345919285232554!3d-22.832013040946777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x996358b240e555%3A0x3e5c7d69f4b662b7!2sEstacionamento%20-%20Av.%20Pastor%20Martin%20Luther%20King%20J%C3%BAnior%2C%20126%20-%20Del%20Castilho%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020760-005!5e0!3m2!1spt-BR!2sbr!4v1658530181760!5m2!1spt-BR!2sbr" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="coluna">
                 <form action="">
-                    <label for=""><strong>Nome</strong></label>
+                    <label for="nome"><strong>Nome</strong></label>
                     <input type="text" name="nome" id="nome" required placeholder="Nome..">
-                    <label for=""><strong>Sobrenome</strong></label>
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
                     <input type="text" name="sobrenome" id="sobrenome" required placeholder="Sobrenome..">
                     <label for="email"><strong>Email</strong></label>
                     <input type="email" name="email" id="email" required placeholder="Email..">
                     <label for="telefone"><strong>Telefone</strong></label>
-                    <input type="tel" name="telefone" id="telefone" required placeholder="Telefone..">
-                    <label for="spartacus"><strong>Como Conheceu a Spartacus ?</strong></label>
-                    <select id="spartacus" required>
+                    <input type="tel" name="telefone" id="telefone" required placeholder="(21) 99999-9999">
+                    <label for="rede_social"><strong>Como Conheceu a Spartacus ?</strong></label>
+                    <select id="rede_social" name= "rede_social" required>
                         <option selected disabled value="">Selecione</option>
-                        <option>Indicação</option>
-                        <option>Instagram</option>
-                        <option>Facebook</option>
-                        <option>Google</option>
-                        <option>Cliente Reincidente</option>
+                        <option value="indicacao">Indicação</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="google">Google</option>
+                        <option value="cliente-reincidente">Cliente Reincidente</option>
                     </select>
-                    <label for="vertical de interesse"><strong>Interesse de Contratação</strong></label><br>
-                    <select name="contratacao" required>
+                    <label for="tipo_contratacao"><strong>Interesse de Contratação</strong></label><br>
+                    <select id= "tipo_contratacao" name="tipo_contratacao" required>
                         <option selected disabled value="">Selecione</option>
-                        <option>Consultoria Empresarial</option>
-                        <option>Assessoria Política</option>
-                        <option>Cursos Preparatórios</option>
+                        <option value="consultoria-presencial">Consultoria Empresarial</option>
+                        <option value="assessoria-politica">Assessoria Política</option>
+                        <option value="cursos-preparatorios">Cursos Preparatórios</option>
                     </select>
                     <input type="submit" value="Enviar">
                 </form>
             </div>
         </div>
     </div>
-    <!--termina aqui-->
-    
-    <!-- <section id="contact">
-        <h3>Nossas Redes!</h3>
-        <a><link rel="stylesheet" href=""><img src="img/instagram-brands.svg" alt=""></a>
-        <a><link rel="stylesheet" href=""><img src="img/whatsapp-brands.svg" alt=""></a>
-        <a><link rel="stylesheet" href=""><img src="img/facebook-brands.svg" alt=""></a>
-    </section> -->
 
-    <!--Produzido por dhener-->
+    <!--Redes sociais-->
     <footer class="w3-container w3-teal w3-center w3-margin-top" id="contact">
         <p>Encontre-me nas redes sociais.</p>
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-whatsapp w3-hover-opacity"></i>
+        <a href="#" style="text-decoration: none; color: #fff;"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="#" style="text-decoration: none; color: #fff;"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="#" style="text-decoration: none; color: #fff;"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
     </footer>
+
+    <script type="text/javascript">
+        //Navegação
+        const toggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+        //slide - animação
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('.header');
+            var nav = document.querySelector('.navigation');
+            header.classList.toggle('sticky', window.scrollY > 0);
+            nav.classList.toggle('sticky', window.scrollY > 0);
+        });
+        var li = document.getElementsByTagName('li');
+        for(let i = 0; i < li.length; i++){
+            li[i].onclick = function(){
+            toggle.classList.remove('active');
+            navigation.classList.remove('active');
+            }
+        }
+    </script>
 </body>
 </html>
