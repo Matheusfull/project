@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,25 +23,37 @@
             <ul class="navigation">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#features">Essência da marca</a></li>
-                <li><a href="#">Cursos</a></li>
                 <li><a href="#base">Missão, visão e verbos</a></li>
                 <li><a href="#contact">Fale conosco</a></li>
-                <li><a href="#formulario ">Cadastre-se</a></li>
             </ul>
         </nav>
-        <h2>Titulo que quisermos</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia cum sequi quidem libero ratione consectetur
-            autem facilis. Nesciunt voluptas assumenda sed neque fuga veniam eos iusto perferendis alias sint. Fuga.</p>
+        <h2>Nós somos <strong style="color: rgb(207, 108, 10);">transformação</strong></h2>
+        <p>Queremos ser o começo de um caminho de
+            oportunidades, mostrar a direção que nunca foi
+            dada. Somos inspirados pela vontade de fazer.
+            Nossa missão é mostrar que existe um futuro
+            cheio de impacto, diversidade, coletividade e
+            superação para cada um dos nossos guerreiros.<br>
+            Nosso compromisso é com a paixão de
+            aprender, acreditamos em um ensino que
+            envolve e motiva. Valorizamos e acreditamos
+            em todas as trajetórias: nós nascemos da
+            mistura das nossas raízes com o novo,
+            nascemos da luta que nos ergue. <br>Nós não queremos 
+            só dar aula, queremos capacitar pessoas. Nossa 
+            essência é acolher, se adaptar e crescer com as 
+            diferenças. Somos feitos de com quem convivemos, 
+            de com quem trocamos experiências, conhecimentos, 
+            salas de aula, corredores, visões e vontades.</p>
         <div class="btn">
-            <a class="blue" href="#">Leia mais</a>
-            <a class="yellow" href="#">Visite nossos cursos</a>
+            <a class="yellow" href="#formulario ">Cadastre-se</a>
         </div>
     </section>
 
     <!-- Parte que desenvolveremos as opções -->
     <section id="features">
         <h1>Essência da marca</h1>
-         <p>Recursos chaves do nosso projeto.</p>
+         <p style="margin-top: 10px; margin-bottom: 10px;">Recursos chaves do nosso projeto.</p>
         <div class="fea-base">
             <div class="fea-box">
                 <i class='fas fa-graduation-cap'></i>
@@ -67,9 +80,7 @@
     </section>
 
     <section id="base">
-        <div class="imagem">
-            <img src="img/menino_escrevendo.jpeg" alt="um menino escrevendo">
-        </div>
+
         <div class="text_missao">
             <h3>Missão</h3>
             <p> Somos um meio de impacto e desenvolvimento local. Orientamos e preparamos para construirrem
@@ -106,7 +117,7 @@
     <div class="container" id="formulario">
         <div style="text-align: center;">
             <h2>Fale Conosco</h2>
-            <p>Cadastre-se e entraremos em contato com você em breve:</p>
+            <p style="margin-top: 10px;">Cadastre-se e entraremos em contato com você em breve:</p>
         </div>
         <div class="linha">
             <div class="coluna">
@@ -114,31 +125,33 @@
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="coluna">
-                <form action="">
+                <form action="https://gmail.us14.list-manage.com/subscribe/post?u=dc53f199e9db02f673c7a6c27&amp;id=1948e314a0&amp;f_id=009ef1e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <label for="nome"><strong>Nome</strong></label>
-                    <input type="text" name="nome" id="nome" required placeholder="Nome..">
+                    <input type="text" name="FNAME" id="nome" required placeholder="Nome..">
                     <label for="sobrenome"><strong>Sobrenome</strong></label>
-                    <input type="text" name="sobrenome" id="sobrenome" required placeholder="Sobrenome..">
+                    <input type="text" name="LNAME" id="sobrenome" required placeholder="Sobrenome..">
                     <label for="email"><strong>Email</strong></label>
-                    <input type="email" name="email" id="email" required placeholder="Email..">
+                    <input type="email" name="EMAIL" id="email" required placeholder="Email..">
                     <label for="telefone"><strong>Telefone</strong></label>
-                    <input type="tel" name="telefone" id="telefone" required placeholder="(21) 99999-9999">
+                    <input type="tel" name="TELEFONE" id="telefone" required placeholder="(21)99999-9999" pattern="([0-9]{2})[0-9]{5}-[0-9]{4}">
                     <label for="rede_social"><strong>Como Conheceu a Spartacus ?</strong></label>
-                    <select id="rede_social" name= "rede_social" required>
+                    <select id="rede_social" name= "REDESOCIAL" required>
                         <option selected disabled value="">Selecione</option>
-                        <option value="indicacao">Indicação</option>
-                        <option value="instagram">Instagram</option>
-                        <option value="facebook">Facebook</option>
-                        <option value="google">Google</option>
-                        <option value="cliente-reincidente">Cliente Reincidente</option>
+                        <option value="Indicação">Indicação</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Google">Google</option>
+                        <option value="Cliente Reincidente">Cliente Reincidente</option>
                     </select>
                     <label for="tipo_contratacao"><strong>Interesse de Contratação</strong></label><br>
-                    <select id= "tipo_contratacao" name="tipo_contratacao" required>
+                    <select id= "tipo_contratacao" name="INTERESSE" required>
                         <option selected disabled value="">Selecione</option>
-                        <option value="consultoria-presencial">Consultoria Empresarial</option>
-                        <option value="assessoria-politica">Assessoria Política</option>
-                        <option value="cursos-preparatorios">Cursos Preparatórios</option>
+                        <option value="Consultoria Empresarial">Consultoria Empresarial</option>
+                        <option value="Assessoria Política">Assessoria Política</option>
+                        <option value="Cursos Preparatórios">Cursos Preparatórios</option>
                     </select>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dc53f199e9db02f673c7a6c27_1948e314a0" tabindex="-1" value=""></div>
                     <input type="submit" value="Enviar">
                 </form>
             </div>
@@ -148,9 +161,9 @@
     <!--Redes sociais-->
     <footer class="w3-container w3-teal w3-center w3-margin-top" id="contact">
         <p>Encontre-me nas redes sociais.</p>
-        <a href="#" style="text-decoration: none; color: #fff;"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-        <a href="#" style="text-decoration: none; color: #fff;"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-        <a href="#" style="text-decoration: none; color: #fff;"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+        <a href="https://www.facebook.com/Spartacus-Consultoria-108930580865570" style="text-decoration: none; color: #fff;"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/spartacusconsultoria/" style="text-decoration: none; color: #fff;"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=5521982375418&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20diagn%C3%B3stico%2C%20consegue%20me%20ajudar%3F" style="text-decoration: none; color: #fff;"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
     </footer>
 
     <script type="text/javascript">
